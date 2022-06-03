@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  font-size: 16px;
+  color: #24292e;
+  font-family: 'Roboto Slab', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.header, .header .user-info, .header .func-elems-shell, .header .func-elems-shell .add-note-but, .header .func-elems-shell .add-note-but .choose-panel .c-p_note, .body .notes-container, .body .note-shell, .body .note-shell .note-right-side, .body .note-shell .note-right-side .note_info-shell .note_extra-info, .body .note-shell .note-right-side .note_info-shell .note_extra-info .note-type, .body .note-shell .note_but-shell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-empty {
+  height: 100px;
+}
+
+.header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  width: 80vw;
+  padding: 0 10vw;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.header .user-info .logout-icon-shell {
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.header .user-info .logout-icon-shell .logout-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header .user-info .logout-icon-shell:hover {
+  cursor: pointer;
+  background-color: #f7f8f8;
+}
+
+.header .user-info .user-name {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header .user-info .read-notes-shell {
+  margin-left: 100px;
+}
+
+.header .user-info .read-notes-shell p {
+  color: #557ced;
+}
+
+.header .user-info .read-notes-shell .read-notes {
+  color: #557ced;
+}
+
+.header .user-info .shared-notes-shell {
+  margin-left: 50px;
+}
+
+.header .user-info .shared-notes-shell p {
+  color: #4aa75b;
+}
+
+.header .user-info .shared-notes-shell .shared-notes {
+  color: #4aa75b;
+}
+
+.header .func-elems-shell .header-but {
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.header .func-elems-shell .header-but img {
+  width: 40px;
+  height: 40px;
+}
+
+.header .func-elems-shell .add-note-but {
+  border-radius: 0 10px 10px 0;
+  position: relative;
+}
+
+.header .func-elems-shell .add-note-but .choose-panel {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -207%;
+  padding: 5px;
+  border-radius: 10px 0 10px 10px;
+  background-color: #f7f8f8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header .func-elems-shell .add-note-but .choose-panel .c-p_note {
+  border-radius: 10px;
+  padding: 10px 15px 10px 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.header .func-elems-shell .add-note-but .choose-panel .c-p_note img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header .func-elems-shell .add-note-but .choose-panel .c-p_note p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header .func-elems-shell .add-note-but .choose-panel .c-p_note:hover {
+  background-color: #eaeded;
+}
+
+.header .func-elems-shell .header-but:hover {
+  cursor: pointer;
+  background-color: #f7f8f8;
+}
+
+.header .func-elems-shell .header-but:hover .choose-panel {
+  display: block;
+}
+
+.header .func-elems-shell .add-url-note-but {
+  position: relative;
+}
+
+.header .func-elems-shell .add-url-note-but .url-input-shell {
+  display: none;
+  position: absolute;
+  right: -100%;
+  background-color: #fff;
+  border: 1px solid #eaeded;
+  border-radius: 10px;
+  padding: 10px 15px;
+  z-index: 5;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.header .func-elems-shell .add-url-note-but .url-input-shell .url-note-add-but {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #557ced;
+  color: #557ced;
+  font-weight: 500;
+}
+
+.header .func-elems-shell .add-url-note-but .url-input-shell .url-note-add-but:hover {
+  cursor: pointer;
+  background-color: #557ced;
+  color: #fff;
+}
+
+.header .func-elems-shell .add-url-note-but .url-input-shell .url-input {
+  width: 300px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 1px solid #b7c0cb;
+  border-radius: 10px;
+}
+
+.header .func-elems-shell .add-url-note-but .url-input-shell .url-input:focus {
+  border: 1px solid #557ced;
+}
+
+.header .func-elems-shell .add-url-note-but:hover .url-input-shell {
+  display: block;
+}
+
+.body .notes-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0 120px 0;
+}
+
+.body .note-shell {
+  width: 65vw;
+  height: 71px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #eaeded;
+}
+
+.body .note-shell .note-right-side .note-pin-shell {
+  padding: 5px;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.body .note-shell .note-right-side .note-pin-shell .pin-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.body .note-shell .note-right-side .note-pin-shell_private:hover {
+  cursor: pointer;
+  background-color: #f7f8f8;
+}
+
+.body .note-shell .note-right-side .note_info-shell {
+  margin-left: 10px;
+  position: relative;
+}
+
+.body .note-shell .note-right-side .note_info-shell .note-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.body .note-shell .note-right-side .note_info-shell .note-title:hover {
+  text-decoration: underline;
+}
+
+.body .note-shell .note-right-side .note_info-shell .reading_only-icon {
+  position: absolute;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.body .note-shell .note-right-side .note_info-shell .note_extra-info {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 8px;
+}
+
+.body .note-shell .note-right-side .note_info-shell .note_extra-info .note-date {
+  font-size: 14px;
+  margin-left: 20px;
+  color: #b7c0cb;
+}
+
+.body .note-shell .note-right-side .note_info-shell .note_extra-info .note-type {
+  border-radius: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.body .note-shell .note-right-side .note_info-shell .note_extra-info .note-type img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.body .note-shell .note_user-name {
+  color: #b7c0cb;
+}
+
+.body .note-shell .note_another_user-name {
+  color: #557ced;
+  font-weight: 500;
+}
+
+.body .note-shell .note_but-shell {
+  border-radius: 10px;
+  width: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+
+.body .note-shell .note_but-shell .note_icon-shell {
+  padding: 5px;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.body .note-shell .note_but-shell .note_icon-shell img {
+  width: 35px;
+  height: 35px;
+}
+
+.body .note-shell .note_but-shell .note_icon-shell .remove-icon {
+  width: 35px;
+  height: 35px;
+  background: url(../../icons/delete_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.body .note-shell .note_but-shell .link-icon-shell_shared {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.body .note-shell .note_but-shell .link-icon-shell_shared p {
+  color: #4aa75b;
+}
+
+.body .note-shell .note_but-shell .link_popup-info-shell {
+  text-align: center;
+  position: absolute;
+  left: -250px;
+  top: 100%;
+  z-index: 5;
+  width: 400px;
+  padding: 15px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid #eaeded;
+  border-radius: 15px;
+}
+
+.body .note-shell .note_but-shell .link_popup-info-shell .url {
+  color: #4aa75b;
+  padding: 7px 0;
+  border-radius: 10px;
+}
+
+.body .note-shell .note_but-shell .link_popup-info-shell .url:hover {
+  background-color: #f7f8f8;
+  cursor: text;
+}
+
+.body .note-shell .note_but-shell .link_popup-info-shell .involved-users-shell {
+  margin-top: 10px;
+}
+
+.body .note-shell .note_but-shell .link_popup-info-shell .involved-users-shell p {
+  color: #24292e;
+}
+
+.body .note-shell .note_but-shell .link_popup-info-shell .involved-users-shell .involved-users_names {
+  margin-top: 5px;
+  color: #557ced;
+}
+
+.body .note-shell .note_but-shell .link_popup-info-shell:hover {
+  cursor: default;
+}
+
+.body .note-shell .note_but-shell .link-icon-shell_public:hover {
+  cursor: pointer;
+  background-color: #f7f8f8;
+}
+
+.body .note-shell .note_but-shell .remove-icon-shell:hover {
+  cursor: pointer;
+  background-color: #ff4538df;
+}
+
+.body .note-shell .note_but-shell .remove-icon-shell:hover .remove-icon {
+  background: url(../../icons/delete_FILL0_wght400_GRAD0_opsz48_white.svg);
+}
+
+.body .note-shell:hover {
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=style.css.map */

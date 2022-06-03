@@ -1,0 +1,306 @@
+* 
+    margin: 0
+    font-size: 16px
+    color: #24292e
+    font-family: 'Roboto Slab', serif
+
+a
+    text-decoration: none
+
+input, textarea
+    outline: none
+
+%flex 
+    display: flex
+    justify-content: center
+    align-items: center  
+
+
+
+
+
+
+.header-empty 
+    height: 100px
+
+
+.header
+    @extend %flex
+    justify-content: space-between
+    height: 100px
+    width: 80vw
+    padding: 0 10vw
+    margin-bottom: 10px 
+    position: fixed
+    top: 0
+    z-index: 10
+    background-color: #fff
+    transition: all 0.2s ease
+
+    .user-info
+        @extend %flex
+        .logout-icon-shell
+            padding: 5px
+            border-radius: 10px
+            margin: 0 10px 
+            .logout-icon
+                transform: rotate(180deg)
+                width: 30px
+                height: 30px
+                position: relative
+                top: 3px
+                user-select: none
+        .logout-icon-shell:hover
+            cursor: pointer
+            background-color: #f7f8f8
+
+        .user-name
+            font-weight: 500
+            font-size: 20px
+
+        .read-notes-shell
+            margin-left: 100px
+            p
+                color: #557ced
+            .read-notes
+                color: #557ced
+
+        .shared-notes-shell
+            margin-left: 50px
+            p
+                color: #4aa75b
+            .shared-notes
+                color: #4aa75b
+
+
+    .func-elems-shell
+        @extend %flex
+
+        .header-but
+            padding: 5px
+            border-radius: 10px
+            margin: 0 5px 
+            img
+                width: 40px
+                height: 40px
+
+
+        .add-note-but
+            border-radius: 0 10px 10px 0 
+            @extend %flex
+            position: relative
+
+            .choose-panel
+                display: none
+                position: absolute
+                top: 0
+                left: -207%
+                padding: 5px
+                border-radius: 10px 0 10px 10px 
+                background-color: #f7f8f8
+                user-select: none
+                .c-p_note
+                    border-radius: 10px 
+                    padding: 10px 15px 10px 10px
+                    @extend %flex
+                    justify-content: start
+                    img
+                        width: 20px
+                        height: 20px
+                        margin-right: 5px 
+                        user-select: none
+                    p
+                        user-select: none
+                .c-p_note:hover
+                    background-color: #eaeded
+
+        .header-but:hover
+            cursor: pointer
+            background-color: #f7f8f8
+            .choose-panel
+                display: block
+
+
+        .add-url-note-but
+            position: relative
+            .url-input-shell
+                display: none
+                position: absolute
+                right: -100%
+                background-color: #fff
+                border: 1px solid #eaeded
+                border-radius: 10px
+                padding: 10px 15px
+                z-index: 5 
+                box-shadow: 0 5px 30px rgba(0, 0, 0, .15)
+                text-align: center
+
+                .url-note-add-but
+                    padding: 10px
+                    border-radius: 10px
+                    border: 2px solid #557ced
+                    color: #557ced
+                    font-weight: 500
+                .url-note-add-but:hover
+                    cursor: pointer
+                    background-color: #557ced
+                    color: #fff
+
+                .url-input
+                    width: 300px
+                    margin: 10px 0
+                    padding: 5px 10px 
+                    border: 1px solid #b7c0cb
+                    border-radius: 10px
+                .url-input:focus
+                    border: 1px solid #557ced
+
+        .add-url-note-but:hover
+            .url-input-shell
+                display: block
+
+
+
+
+
+
+
+.body
+    .notes-container
+        @extend %flex
+        flex-direction: column
+        padding: 20px 0 120px 0
+
+    .note-shell
+        width: 65vw
+        height: 71px
+        @extend %flex
+        justify-content: space-between
+        margin: 10px 0
+        border-radius: 15px
+        padding: 10px
+        border: 1px solid #eaeded
+
+        .note-right-side
+            @extend %flex
+            .note-pin-shell
+                padding: 5px
+                border-radius: 10px
+                width: 35px
+                height: 35px
+                .pin-icon
+                    width: 35px
+                    height: 35px
+            .note-pin-shell_private:hover
+                cursor: pointer
+                background-color: #f7f8f8
+
+            .note_info-shell
+                margin-left: 10px
+                position: relative
+
+                .note-title
+                    font-size: 18px
+                    font-weight: 700
+                .note-title:hover
+                    text-decoration: underline
+
+                .reading_only-icon
+                    position: absolute
+                    margin-left: 10px
+                    width: 25px
+                    height: 25px
+                    
+                .note_extra-info
+                    @extend %flex
+                    justify-content: start
+                    margin-top: 8px
+                    .note-date
+                        font-size: 14px
+                        margin-left: 20px
+                        color: #b7c0cb
+                    .note-type
+                        border-radius: 10px 
+                        @extend %flex
+                        justify-content: start
+                        img
+                            width: 15px
+                            height: 15px
+                            margin-right: 5px 
+                            
+        .note_user-name
+            color: #b7c0cb
+
+        .note_another_user-name
+            color: #557ced
+            font-weight: 500
+
+        .note_but-shell
+            border-radius: 10px
+            width: 100px
+            @extend %flex
+            justify-content: space-between
+            position: relative
+            text-align: center
+            
+            .note_icon-shell
+                padding: 5px
+                border-radius: 10px
+                width: 35px
+                height: 35px
+                img 
+                    width: 35px
+                    height: 35px
+                .remove-icon
+                    width: 35px
+                    height: 35px
+                    background: url(../../icons/delete_FILL0_wght400_GRAD0_opsz48.svg)
+            .link-icon-shell
+                
+            .link-icon-shell_shared
+                height: fit-content
+                p
+                    color: #4aa75b
+
+            .link_popup-info-shell
+                text-align: center
+                // display: none
+                position: absolute
+                left: -250px
+                top: 100%
+                z-index: 5
+                width: 400px
+                padding: 15px 10px
+                background-color: #fff
+                box-shadow: 0 5px 30px rgba(0, 0, 0, .15)
+                border: 1px solid #eaeded
+                border-radius: 15px
+                .url
+                    color: #4aa75b
+                    padding: 7px 0
+                    border-radius: 10px
+                .url:hover
+                    background-color: #f7f8f8
+                    cursor: text
+
+                .involved-users-shell
+                    margin-top: 10px
+                    p
+                        color: #24292e
+                    .involved-users_names
+                        margin-top: 5px
+                        color: #557ced
+
+            .link_popup-info-shell:hover
+                cursor: default
+            .link-icon-shell_public:hover
+                cursor: pointer
+                background-color: #f7f8f8
+            .remove-icon-shell:hover
+                cursor: pointer
+                background-color: #ff4538df
+                .remove-icon
+                    background: url(../../icons/delete_FILL0_wght400_GRAD0_opsz48_white.svg)
+    .note-shell:hover
+        box-shadow: 0 15px 30px rgba(0, 0, 0, .1)
+

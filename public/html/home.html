@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/css/style.css">
+    <title>Web Notes</title>
+</head>
+<body>
+    <div class="header-empty"></div>
+    <header class="header">
+        <div class="user-info">
+            <div class="logout-icon-shell">
+                <img src="../icons/logout_FILL0_wght400_GRAD0_opsz40.svg" alt="" class="logout-icon">
+            </div>
+            <div class="user-name"></div>
+            <div class="read-notes-shell">
+                <p>Notes you read: <span class="read-notes"></span> </p>
+            </div>
+            <div class="shared-notes-shell">
+                <p>Notes you shared: <span class="shared-notes"></span> </p>
+            </div>
+        </div>
+        <div class="func-elems-shell">
+            <div class="add-note-but header-but">
+                <img src="../icons/note_add_FILL0_wght400_GRAD0_opsz48.svg" class="add-note-icon"></img>
+                <div class="choose-panel">
+                    <div class="c-p_private-note c-p_note">
+                        <img src="../icons/lock_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                        <p>Private</p>
+                    </div>
+                    <div class="c-p_public-note c-p_note">
+                        <img src="../icons/public_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                        <p>Public</p>
+                    </div>
+                </div>
+            </div>
+            <div class="add-url-note-but header-but">
+                <img src="../icons/add_link_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+                <div class="url-input-shell">
+                    <p>Enter note URL</p>
+                    <input type="text" class="url-input">
+                    <div class="url-note-add-but">Add</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body">
+        <div class="notes-container">
+
+            <!-- <div class="note-shell">
+                <div class="note-right-side">
+                    <div class="note-pin-shell">
+                        <img src="../icons/label_off_FILL0_wght400_GRAD0_opsz40.svg" alt="" class="pin-icon">
+                    </div>
+                    <div class="note_info-shell">
+                        <a href="../html/note.html" class="note-title">Lorem ipsum dolor sit</a>
+                        <div class="note_extra-info">
+                            <div class="note-type">
+                                <img src="../icons/public_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                                <p>Public</p>
+                            </div>
+                            <div class="note-date">03.04.2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="note_user-name">user</div>
+                <div class="note_but-shell">
+                    <div class="note_icon-shell link-icon-shell link-icon-shell_public link-icon-shell_shared">
+                        <img src="../icons/link_FILL0_wght400_GRAD0_opsz48_green.svg" class="link-icon" alt="">
+                        <p>1</p>
+                    </div>
+                    <div class="note_icon-shell remove-icon-shell">
+                        <div class="remove-icon"></div>
+                    </div>
+                </div>
+            </div> -->
+
+            
+            <!-- <div class="note-shell">
+                <div class="note-right-side">
+                    <div class="note-pin-shell note-pin-shell_private">
+                        <img src="../icons/label_FILL1_wght400_GRAD0_opsz40.svg" alt="" class="pin-icon">
+                    </div>
+                    <div class="note_info-shell">
+                        <a href="../html/note.html" class="note-title">Lorem ipsum dolor sit</a>
+                        <div class="note_extra-info">
+                            <div class="note-type">
+                                <img src="../icons/lock_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                                <p>Private</p>
+                            </div>
+                            <div class="note-date">03.04.2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="note_user-name">user</div>
+                <div class="note_but-shell">
+                    <div class="note_icon-shell link-icon-shell">
+                        <img src="../icons/link_off_FILL0_wght400_GRAD0_opsz48.svg" class="link-icon" alt="">
+                    </div>
+                    <div class="note_icon-shell remove-icon-shell">
+                        <div class="remove-icon"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-shell">
+                <div class="note-right-side">
+                    <div class="note-pin-shell note-pin-shell_private">
+                        <img src="../icons/label_FILL0_wght400_GRAD0_opsz40.svg" alt="" class="pin-icon">
+                    </div>
+                    <div class="note_info-shell">
+                        <a href="../html/note.html" class="note-title">Lorem ipsum dolor sit</a>
+                        <div class="note_extra-info">
+                            <div class="note-type">
+                                <img src="../icons/lock_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                                <p>Private</p>
+                            </div>
+                            <div class="note-date">03.04.2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="note_user-name">user</div>
+                <div class="note_but-shell">
+                    <div class="note_icon-shell link-icon-shell">
+                        <img src="../icons/link_off_FILL0_wght400_GRAD0_opsz48.svg" class="link-icon" alt="">
+                    </div>
+                    <div class="note_icon-shell remove-icon-shell">
+                        <div class="remove-icon"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-shell">
+                <div class="note-right-side">
+                    <div class="note-pin-shell">
+                        <img src="../icons/label_off_FILL0_wght400_GRAD0_opsz40.svg" alt="" class="pin-icon">
+                    </div>
+                    <div class="note_info-shell">
+                        <a href="../html/note.html" class="note-title">Lorem ipsum dolor sit</a>
+                        <div class="note_extra-info">
+                            <div class="note-type">
+                                <img src="../icons/public_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                                <p>Public</p>
+                            </div>
+                            <div class="note-date">03.04.2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="note_user-name">user</div>
+                <div class="note_but-shell">
+                    <div class="note_icon-shell link-icon-shell link-icon-shell_public">
+                        <img src="../icons/link_FILL0_wght400_GRAD0_opsz48.svg" class="link-icon" alt="">
+                    </div>
+                    <div class="note_icon-shell remove-icon-shell">
+                        <div class="remove-icon"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-shell">
+                <div class="note-right-side">
+                    <div class="note-pin-shell">
+                        <img src="../icons/label_off_FILL0_wght400_GRAD0_opsz40.svg" alt="" class="pin-icon">
+                    </div>
+                    <div class="note_info-shell">
+                        <a href="../html/note.html" class="note-title">Lorem ipsum dolor sit</a>
+                        <img src="../icons/visibility_FILL0_wght400_GRAD0_opsz40.svg" class="reading_only-icon" alt="">
+                        <div class="note_extra-info">
+                            <div class="note-type">
+                                <img src="../icons/public_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                                <p>Public</p>
+                            </div>
+                            <div class="note-date">03.04.2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="note_user-name note_another_user-name">user_1346</div>
+                <div class="note_but-shell">
+                    <div class="note_icon-shell link-icon-shell">
+                        <img src="../icons/link_off_FILL0_wght400_GRAD0_opsz48.svg" class="link-icon" alt="">
+                    </div>
+                    <div class="note_icon-shell remove-icon-shell">
+                        <div class="remove-icon"></div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../js/classes/Note.js"></script>
+    <script src="../js/classes/PrivateNote.js"></script>
+    <script src="../js/classes/PublicNote.js"></script>
+    <script src="../js/classes/User.js"></script>
+    <script src="../js/classes/Author.js"></script>
+    <script src="../js/classes/Reader.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

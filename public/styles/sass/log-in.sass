@@ -1,0 +1,71 @@
+%flex 
+    display: flex
+    justify-content: center
+    align-items: center  
+
+
+
+
+
+.log-in-form_container
+    height: 100vh
+    width: 100vw
+    @extend %flex
+
+    .log-in-form-shell
+        height: 50%
+        width: 25%
+        border-radius: 30px
+        border: 1px solid #eaeded
+        padding: 10px
+        box-shadow: 0 15px 30px rgba(0, 0, 0, .1)
+        
+        .log-in-form_title-shell
+            width: 100%
+            height: 20%
+            @extend %flex
+            .log-in-form_title
+                font-size: 25px
+                font-weight: 700
+            
+        .log-in-form_inputs
+            width: 100%
+            height: 60%
+            @extend %flex
+            flex-direction: column
+            .log-in_i
+                margin: 10px 0
+                font-size: 20px
+                font-weight: 500
+                padding: 5px 10px 
+                border: 2px solid #b7c0cb
+                border-radius: 10px
+            .log-in_i:focus
+                border: 2px solid #557ced
+
+            .pass_toggle
+                width: 75%
+                font-size: 14px
+                text-align: left
+                font-weight: 500
+                color: #b7c0cb
+            .pass_toggle:hover
+                cursor: pointer
+                text-decoration: underline
+
+        .log-in-form_but-shell
+            width: 100%
+            height: 20%
+            @extend %flex
+            align-items: start
+            .log-in-form_but
+                padding: 10px 20px
+                border-radius: 10px
+                // background-color: #b7c0cb
+                border: 2px solid #557ced
+                color: #557ced
+                font-weight: 500
+            .log-in-form_but:hover
+                cursor: pointer
+                background-color: #557ced
+                color: #fff
