@@ -9,7 +9,6 @@ class Note {
     }
 
     delete (data) {
-        console.log(data);
         let readers = data[this._owner][this._id]['readers']
 
         if (curUser != this._owner) {
@@ -17,6 +16,10 @@ class Note {
                 if (readers[i] == curUser) { 
                     data[this._owner][this._id]['readers'].splice(i, 1); 
                 }
+            }
+
+            if (readers.length == 0) {
+                data[this._owner][this._id]['readers'] = null;
             }
         }
 

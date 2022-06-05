@@ -45,8 +45,7 @@ class PublicNote extends Note {
                     if (inData[key_2]['url'] == url) {
                         let obj = {};
                         obj[key_2] = inData[key_2];
-
-                        // obj[key_2]['readers'] = null;
+                        
                         return obj;
                     }
                 }

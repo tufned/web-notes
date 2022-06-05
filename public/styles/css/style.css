@@ -232,6 +232,8 @@ input, textarea {
   border-radius: 15px;
   padding: 10px;
   border: 1px solid #eaeded;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .body .note-shell .note-right-side .note-pin-shell {

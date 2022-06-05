@@ -19,9 +19,14 @@ class Author extends User{
             }
         }
 
+        const sharedNotes = document.querySelector('.shared-notes');
+        sharedNotes.innerHTML = count;
 
+        const sharedNotesShell = document.querySelector('.shared-notes-shell');
+        if (count > 0) sharedNotesShell.style.display = 'block';
+        else sharedNotesShell.style.display = 'none';
+        
         this.read_sharedNotes = notesInfo;
-        return count
     }
 
     shareIconChange () {

@@ -230,14 +230,12 @@ logoutBut.addEventListener('click', () => {
 
 
 
-const readNotes = document.querySelector('.read-notes');
+
 const reader = new Reader(curUser, 0);
-readNotes.innerHTML = reader.read_sharedNotes_render(noteClasses_all);
+reader.read_sharedNotes_render(noteClasses_all);
 
 
 
-const sharedNotes = document.querySelector('.shared-notes');
 const author = new Author(curUser, 0);
-
-sharedNotes.innerHTML = author.sharedNotes_render(notesData_full);
+author.sharedNotes_render(notesData_full);
 author.shareIconChange();

@@ -11,6 +11,15 @@ class Reader extends User{
                 count++;
             }
         }
+
+        const readNotes = document.querySelector('.read-notes');
+        readNotes.innerHTML = count;
+
+        const readNotesShell = document.querySelector('.read-notes-shell');
+        if (count > 0) readNotesShell.style.display = 'block';
+        else readNotesShell.style.display = 'none';
+
+
         this.read_sharedNotes = count;
         return this.read_sharedNotes
     }
