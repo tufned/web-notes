@@ -1,6 +1,6 @@
 class PrivateNote extends Note {
-    constructor (id, title, text, publication_date, owner, curUser, pinned) {
-        super(id, title, text, publication_date, owner, curUser)
+    constructor (id, title, text, date, owner, curUser, pinned) {
+        super(id, title, text, date, owner, curUser)
         this.pinned = pinned;
     }
 

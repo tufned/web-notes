@@ -1,6 +1,6 @@
 class PublicNote extends Note {
-    constructor (id, title, text, publication_date, owner, curUser, url, readers) {
-        super(id, title, text, publication_date, owner, curUser)
+    constructor (id, title, text, date, owner, curUser, url, readers) {
+        super(id, title, text, date, owner, curUser)
         this._url = url;
         this.readers = readers;
     }
